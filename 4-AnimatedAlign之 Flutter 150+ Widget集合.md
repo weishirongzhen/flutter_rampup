@@ -13,7 +13,7 @@ AnimatedAlign， 带动画版本的Align<br>
 AnimatedAlign的参数
 * 【child】child节点
 * 【alignment】Alignment类型，控制对齐方式，支持topLeft,topCenter,topRight,centerLeft,center,centerRight,bottomLeft,bottomCenter,bottomRight
-* 【curve】Curves 类型很多，具体效果请看[Curves](https://juejin.im/post/5d2d21066fb9a07ea420b077)
+* 【curve】Curves 类型很多，具体效果请看[Curves](https://api.flutter-io.cn/flutter/animation/Curves-class.html)
 * 【duration】动画持续时间
 * 【onEnd】动画结束的无参回调
 
