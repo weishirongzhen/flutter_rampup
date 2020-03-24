@@ -1,5 +1,9 @@
 
-# 【1】AlertDialog之Flutter 150+ widget用法示例全集
+
+---
+**Flutter 150+ widget 系列示例，持续更新ing~~，更新顺序为按A-Z排序**<br>
+[github地址](https://github.com/memtopia/flutter_rampup_demo_app) https://github.com/memtopia/flutter_rampup_demo_app<br>
+android用户可直接安装仓库中flutter_book.apk查看效果，iOS用户可同步代码后编译安装到手机上查看
 
 ---
 
@@ -24,6 +28,8 @@ AlertDialog的参数
 * 【clipBehavior】: 有关裁切的属性，暂不明应用场景
 * 【shape】提示框形状
 * 【scrollable】当内容长度大于提示框高度时，内容是否可滚动
+
+部分代码
 ```dart
 showDialog(
   barrierDismissible: false, //barrierDismissible = true 时点击AlertDialog外部，会使AlertDialog消失，false 则不会
@@ -51,5 +57,5 @@ showDialog(
   ),
 );
 ```
-![AlertDialog](images/AlertDialog.jpg)
+![AlertDialog](https://github.com/memtopia/flutter_rampup/raw/master/images/AlertDialog.jpg)
 
