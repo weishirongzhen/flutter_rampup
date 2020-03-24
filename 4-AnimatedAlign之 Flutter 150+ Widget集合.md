@@ -10,7 +10,8 @@ android用户可直接安装仓库中flutter_book.apk查看效果，iOS用户可
 
 AnimatedAlign， 带动画版本的Align<br>
 
-xxx的参数
+AnimatedAlign的参数
+* 【child】child节点
 * 【alignment】Alignment类型，控制对齐方式，支持topLeft,topCenter,topRight,centerLeft,center,centerRight,bottomLeft,bottomCenter,bottomRight
 * 【curve】Curves 类型很多，具体效果请看[Curves](https://juejin.im/post/5d2d21066fb9a07ea420b077)
 * 【duration】动画持续时间

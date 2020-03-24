@@ -19,6 +19,7 @@ RaisedButton(
 当absorbing为true时，用户输入事件被吸收，不会再把事件传递给RaisedButton，一般用来禁止某一片区域的点击事件
 
 AbsorbPointer的参数
+* 【child】child节点
 * 【absorbing】是否吸收用户输入
 部分代码
 ```dart
