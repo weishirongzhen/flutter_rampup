@@ -25,18 +25,32 @@ AnimatedCrossFade的参数
 部分代码
 
 ```dart
-AnimatedCrossFade(
-  duration: const Duration(milliseconds: 700),
-  firstChild: const FlutterLogo(
-    style: FlutterLogoStyle.horizontal,
-    size: 200.0,
-  ),
-  secondChild: const FlutterLogo(
-    style: FlutterLogoStyle.stacked,
-    size: 200.0,
-  ),
-  crossFadeState: _first ? CrossFadeState.showFirst : CrossFadeState.showSecond,
-),
+Column(
+  children: <Widget>[
+    ///淡入淡出的切换两个widget
+    AnimatedCrossFade(
+      duration: const Duration(milliseconds: 700),
+      firstChild: const FlutterLogo(
+        style: FlutterLogoStyle.horizontal,
+        size: 200.0,
+      ),
+      secondChild: const FlutterLogo(
+        style: FlutterLogoStyle.stacked,
+        size: 200.0,
+      ),
+      crossFadeState: _first ? CrossFadeState.showFirst : CrossFadeState.showSecond,
+    ),
+    ///点击后改变要显示的widget
+    RaisedButton(
+      onPressed: () {
+        setState(() {
+          _first = !_first;
+        });
+      },
+      child: Text('Click me'),
+    ),
+  ],
+)
 
 ```
 ![AnimatedCrossFade](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedCrossFade.gif)
