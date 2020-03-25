@@ -40,7 +40,7 @@ GestureDetector(
     height: _selected ? _value : 100,
     width: _selected ? _value : 100,
     decoration: BoxDecoration(
-      color: _selected ? _color : Colors.blueGrey,
+      color: _selected ? Colors.brown : Colors.blueGrey,
       borderRadius: _selected ? BorderRadius.circular(100) : BorderRadius.circular(0),
     ),
     duration: Duration(milliseconds: 200),
@@ -49,6 +49,7 @@ GestureDetector(
       'Click me',
       style: TextStyle(fontSize: 20, color: Colors.white),
     )),
+    onEnd: (){print("动画结束");},
   ),
 ),
 

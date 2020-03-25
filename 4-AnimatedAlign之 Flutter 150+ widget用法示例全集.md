@@ -34,6 +34,7 @@ Column(
         child: FlutterLogo(
           size: 60,
         ),
+        onEnd: (){print("动画结束");},
       ),
     ),
     RaisedButton(
