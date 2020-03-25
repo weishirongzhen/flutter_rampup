@@ -39,6 +39,6 @@ AnimatedCrossFade(
 ),
 
 ```
-![Align](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedCrossFade.git)
+![AnimatedCrossFade](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedCrossFade.gif)
 
 
