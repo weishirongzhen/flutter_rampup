@@ -21,7 +21,7 @@ AnimatedContainer的参数
 * 【height】高度
 * 【constraints】为child添加额外的布局约束
 * 【margin】包裹decoration或者child的空白空间，类似于android的margin属性
-* 【transform】每次动画值变化调用此方法刷新widget
+* 【transform】绘制参数的相关属性，之后会讲到
 * 【curve】Curves 类型很多，具体效果请看[Curves](https://api.flutter-io.cn/flutter/animation/Curves-class.html)
 * 【duration】一个动画周期的持续时间
 * 【onEnd】动画结束的无参回调
