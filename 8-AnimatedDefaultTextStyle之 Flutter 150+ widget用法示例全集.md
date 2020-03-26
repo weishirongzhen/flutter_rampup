@@ -6,19 +6,20 @@
 ---
 
 
-为两个widget的切换添加cross-fades的效果<br>
+DefaultTextStyle的动画版本，当字体风格变化时产生一个动画效果<br>
 
-AnimatedCrossFade的参数
-* 【firstChild】当 crossFadeState = CrossFadeState.showFirst 时显示的child
-* 【secondChild】当 crossFadeState = CrossFadeState.showSecond 时显示的child
-* 【firstCurve】firstChild显示时的Curve参数，参考[Curves](https://api.flutter-io.cn/flutter/animation/Curves-class.html)
-* 【secondCurve】secondChild显示时的Curve参数，参考[Curves](https://api.flutter-io.cn/flutter/animation/Curves-class.html)
-* 【sizeCurve】当firstChild和secondChild size 不一样时的Curve参数，参考[Curves](https://api.flutter-io.cn/flutter/animation/Curves-class.html)
-* 【alignment】参考[Align](https://juejin.im/post/5e79aeba6fb9a07cda099648)
-* 【crossFadeState】决定当前显示的child，值为 CrossFadeState.showFirst 或 CrossFadeState.showSecond
+AnimatedDefaultTextStyle的参数
+* 【child】child节点
+* 【style】字体风格
+* 【textAlign】text对齐方式
+* 【softWrap】是否自适应换行
+* 【overflow】当字体长度超出布局宽度时，文字的显示方式
+* 【maxLines】显示的最大行数
+* 【textWidthBasis】计算文字宽度的策略，默认值TextWidthBasis.parent
+* 【textHeightBehavior】暂时不明白这个属性的用途
+* 【curve】参考[Curves](https://api.flutter-io.cn/flutter/animation/Curves-class.html)
 * 【duration】一个动画周期的持续时间
-* 【reverseDuration】一个逆向动画周期的持续时间
-* 【layoutBuilder】用于定位child的builder， 默认值AnimatedCrossFade.defaultLayoutBuilder
+* 【onEnd】动画结束的无参回调
 
 部分代码
 
