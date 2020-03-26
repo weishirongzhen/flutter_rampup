@@ -68,6 +68,6 @@ Column(
   ],
 )
 ```
-![AnimatedDefaultTextStyle](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedDefaultTextStyle.gif)
+![AnimatedDefaultTextStyle](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedDefaultTextStyle1.gif)
 
 
