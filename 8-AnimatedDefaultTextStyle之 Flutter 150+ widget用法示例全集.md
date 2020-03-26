@@ -24,34 +24,48 @@ AnimatedDefaultTextStyle的参数
 部分代码
 
 ```dart
+
+bool _change = true;
+
+double _fontSize = 60;
+Color _color = Colors.blue;
+FontWeight _fontWeight = FontWeight.bold;
+
 Column(
+  mainAxisSize: MainAxisSize.min,
   children: <Widget>[
-    ///淡入淡出的切换两个widget
-    AnimatedCrossFade(
-      duration: const Duration(milliseconds: 700),
-      firstChild: const FlutterLogo(
-        style: FlutterLogoStyle.horizontal,
-        size: 200.0,
+    ///改变字体 sized color weight
+    Container(
+      height: 120,
+      child: AnimatedDefaultTextStyle(
+        duration: const Duration(milliseconds: 300),
+        style: TextStyle(
+          fontSize: _fontSize,
+          color: _color,
+          fontWeight: _fontWeight,
+        ),
+        child: Text('Flutter'),
+        onEnd: () {
+          print('动画结束回调');
+        },
       ),
-      secondChild: const FlutterLogo(
-        style: FlutterLogoStyle.stacked,
-        size: 200.0,
-      ),
-      crossFadeState: _first ? CrossFadeState.showFirst : CrossFadeState.showSecond,
     ),
-    ///点击后改变要显示的widget
     RaisedButton(
       onPressed: () {
         setState(() {
-          _first = !_first;
+          _fontSize = _change ? 90 : 60;
+          _color = _change ? Colors.blue : Colors.red;
+          _change = !_change;
+          _fontWeight = _change? FontWeight.bold: FontWeight.w100;
         });
       },
-      child: Text('Click me'),
-    ),
+      child: Text(
+        "Click me!",
+      ),
+    )
   ],
 )
-
 ```
-![AnimatedCrossFade](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedCrossFade.gif)
+![AnimatedDefaultTextStyle](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedDefaultTextStyle.gif)
 
 
