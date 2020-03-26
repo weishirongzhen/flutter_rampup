@@ -24,9 +24,7 @@ AnimatedDefaultTextStyle的参数
 部分代码
 
 ```dart
-
 bool _change = true;
-
 double _fontSize = 60;
 Color _color = Colors.blue;
 FontWeight _fontWeight = FontWeight.bold;
@@ -35,20 +33,23 @@ Column(
   mainAxisSize: MainAxisSize.min,
   children: <Widget>[
     ///改变字体 sized color weight
-    Container(
-      height: 120,
-      child: AnimatedDefaultTextStyle(
-        duration: const Duration(milliseconds: 300),
-        style: TextStyle(
-          fontSize: _fontSize,
-          color: _color,
-          fontWeight: _fontWeight,
-        ),
-        child: Text('Flutter'),
-        onEnd: () {
-          print('动画结束回调');
-        },
+    AnimatedDefaultTextStyle(
+      curve: Curves.bounceOut,
+      duration: const Duration(milliseconds: 300),
+      style: TextStyle(
+        fontSize: _fontSize,
+        color: _color,
+        fontWeight: _fontWeight,
       ),
+      child: Column(
+        children: <Widget>[
+          Text('Flutter'),
+          Text('Flutter'),
+        ],
+      ),
+      onEnd: () {
+        print('动画结束回调');
+      },
     ),
     RaisedButton(
       onPressed: () {
@@ -56,7 +57,8 @@ Column(
           _fontSize = _change ? 90 : 60;
           _color = _change ? Colors.blue : Colors.red;
           _change = !_change;
-          _fontWeight = _change? FontWeight.bold: FontWeight.w100;
+          _fontWeight = _change ? FontWeight.bold : FontWeight.w100;
+          _style = _change ? GoogleFonts.sigmarOne(fontSize: 60, color: Colors.blue) : GoogleFonts.macondo(fontSize: 40, color: Colors.blue);
         });
       },
       child: Text(
