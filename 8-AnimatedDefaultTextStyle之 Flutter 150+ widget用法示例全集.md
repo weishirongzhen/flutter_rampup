@@ -6,7 +6,8 @@
 ---
 
 
-DefaultTextStyle的动画版本，当字体风格变化时产生一个动画效果<br>
+DefaultTextStyle的动画版本，被AnimatedDefaultTextStyle包裹的Text，都会拥有相同的风格，例如下面两个Text widget， 虽然自身并没有设置style， 但是他们被AnimatedDefaultTextStyle包裹， 所以都拥有了相应的风格。<br>
+点击按钮，字体风格变化时产生一个动画效果。<br>
 
 AnimatedDefaultTextStyle的参数
 * 【child】child节点
