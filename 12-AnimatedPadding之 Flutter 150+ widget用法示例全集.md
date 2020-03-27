@@ -5,43 +5,50 @@
 
 ---
 
-一个可滚动的容器，当插入或移除时可以设置动画效果。
+让padding的变化有一个动画过程
 
-AnimatedList的参数
+AnimatedPadding的参数
 * 【child】child节点
-* 【opacity】透明度值
+* 【padding】padding值
 * 【curve】参考[Curves](https://api.flutter-io.cn/flutter/animation/Curves-class.html)
 * 【duration】一个动画周期的持续时间
 * 【onEnd】动画结束的无参回调
-* 【alwaysIncludeSemantics】是否包含children的语义信息，暂不明用法
 
 
 
 部分代码
 
 ```dart
-double _opacity = 1.0;
-
 Column(
-  children: [
-    AnimatedOpacity(
-      duration: Duration(seconds: 1),
-      opacity: _opacity,
-      child: FlutterLogo(
-        size: 200,
+  mainAxisSize: MainAxisSize.min,
+  children: <Widget>[
+    Container(
+      height: 200.0,
+      width: 200.0,
+      color: Colors.blue,
+      child: AnimatedPadding(
+        duration: Duration(milliseconds: 500),
+        padding: _padding,
+        curve: Curves.easeOutQuad,
+        child: Container(
+          color: Colors.redAccent,
+        ),
       ),
     ),
     RaisedButton(
-      child: Text('Click me'),
       onPressed: () {
         setState(() {
-          _opacity = _opacity == 0 ? 1.0 : 0.0;
+          _change = !_change;
+          _padding = _change == true ? EdgeInsets.all(50) : EdgeInsets.all(0);
         });
       },
-    ),
+      child: Text(
+        "Click me",
+      ),
+    )
   ],
 )
 ```
-![AnimatedOpacity](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedOpacity.gif)
+![AnimatedOpacity](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedPadding.gif)
 
 
