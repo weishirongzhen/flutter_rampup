@@ -5,7 +5,7 @@
 
 ---
 
-代表一个物理层的widget并将其child裁切为某种形状，并带动画过度
+代表一个物理层的widget并将其child裁切为某种形状，参数变化时带动画效果
 
 AnimatedPhysicalModel的参数
 * 【child】child节点
