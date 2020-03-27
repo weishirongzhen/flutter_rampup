@@ -6,15 +6,16 @@
 ---
 
 
-与过场动画的Icon
+有过场动画的Icon
 
 AnimatedIcon的参数
-* 【icon】AnimatedIcons类型， Flutter官方提供了很多，可直接使用
+* 【icon】AnimatedIcon类型， Flutter官方提供了很多，可直接使用
 * 【progress】动画进度控制
 * 【color】icon颜色
 * 【size】icon大小
 * 【semanticLabel】描述标签，暂无用处
 * 【textDirection】方向参数， 如果这是为 rtl， 则变成镜像显示
+
 
 部分代码
 
