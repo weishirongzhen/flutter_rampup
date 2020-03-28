@@ -24,6 +24,13 @@ AnimatedPositioned的参数
 部分代码
 
 ```dart
+
+bool _change = true;
+double _left = 0;
+double _top = 0;
+double _right = 100;
+double _bottom = 0;
+
 Column(
   mainAxisAlignment: MainAxisAlignment.start,
   children: <Widget>[
