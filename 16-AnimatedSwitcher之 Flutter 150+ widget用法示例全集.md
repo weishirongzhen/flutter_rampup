@@ -5,6 +5,7 @@
 
 ---
 
+子widget重绘时，让重绘有一个动画效果
 
 AnimatedSwitcher的参数
 * 【child】child节点
