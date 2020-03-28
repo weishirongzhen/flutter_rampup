@@ -5,7 +5,7 @@
 
 ---
 
-当child的size变化时，产生一个过渡动画
+当child的size变化时，产生一个自身的过渡动画，并不是child的过渡动画。
 
 AnimatedSize的参数
 * 【child】child节点
@@ -57,7 +57,7 @@ Column(
 ```
 ![AnimatedSize](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedSize.gif)
 
-从小变大是有过渡动画的， 从大变小却没有，为什么呢？原因是AnimatedSize只会过度自己的child的size， 而不是child本身的size，看下边的图理解
+从小变大是有过渡动画的， 从大变小却没有，为什么呢？原因是AnimatedSize只会过度自己的child的size， 而不是child本身的size，看下边的图理解，AnimatedSize本身确实在变大变小都有过度， 但是他的child没有。
 
 ![AnimatedSize](https://github.com/memtopia/flutter_rampup/raw/master/images/AnimatedSize1.gif)
 
