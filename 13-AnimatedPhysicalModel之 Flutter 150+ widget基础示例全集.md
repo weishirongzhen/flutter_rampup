@@ -10,7 +10,7 @@
 AnimatedPhysicalModel的参数
 * 【child】child节点
 * 【shape】形状
-* 【clipBehavior】裁切类型
+* 【clipBehavior】有关裁切的属性，暂不明应用场景
 * 【borderRadius】描边圆角
 * 【elevation】z轴高度
 * 【color】颜色

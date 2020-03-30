@@ -23,7 +23,7 @@ AlertDialog的参数
 * 【elevation】提示框Z轴高度
 * 【semanticLabel】语义标签，暂时不知道用处
 * 【insetPadding】提示框距屏幕四周的padding
-* 【clipBehavior】: 有关裁切的属性，暂不明应用场景
+* 【clipBehavior】有关裁切的属性，暂不明应用场景
 * 【shape】提示框形状
 * 【scrollable】当内容长度大于提示框高度时，内容是否可滚动
 
