@@ -60,6 +60,6 @@ Column(
 )
 ```
 
-![Banner](https://github.com/memtopia/flutter_rampup/raw/master/images/Banner.png)
+![Banner](https://github.com/memtopia/flutter_rampup/raw/master/images/Banner1.png)
 
 
