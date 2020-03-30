@@ -89,7 +89,7 @@ Widget buildBody(BuildContext context) {
 }
 ```
 shifting类型
-![bottomNavigationBar](https://github.com/memtopia/flutter_rampup/raw/master/images/bottomNavigationBar1.gif)
+![bottomNavigationBar](https://github.com/memtopia/flutter_rampup/raw/master/images/bottomNavigationBar.gif)
 fixed类型
 ![bottomNavigationBar](https://github.com/memtopia/flutter_rampup/raw/master/images/bottomNavigationBar2.gif)
 
