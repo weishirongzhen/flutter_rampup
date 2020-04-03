@@ -7,7 +7,7 @@
 
 页面底部导航栏，
 
-bottomNavigationBar的参数
+BottomNavigationBar的参数
 * 【items】导航栏的items，类型是BottomNavigationBarItem
 * 【onTap】点击回调，回调参数为当前选中的index
 * 【currentIndex】当前选中index
